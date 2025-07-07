@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 <body>
+    <!--Header-->
+    <header>
+        <!--Menu-->
+
+    </header>
+
+    <main>
+        <div class="hero_content">
+            <div><!--DIV img-->
+                <img src="/imagenes/me.jpg" alt="">
+
+            </div>
+            <div><!--DIV Texto presentación-->
+                <p>Hola! Mi nombre es <h1>Joanne Zamorano</h1> y estas en mi portafolio personal.</p>
+                <p>Como <strong>desarrolladora de aplicaciones multiplataforma</strong>, me encanta dar vida a ideas que funcionan en cualquier dispositivo. Mi curiosidad insaciable me llevó a profundizar en el análisis de datos con un <strong>Máster en Data Analytics</strong>, lo que me permite crear soluciones más inteligentes. Y para redondear mi visión, me capacité como <strong>Fullstack Developer de JavaScript</strong>.</p>
+                <p>¡Echa un vistazo a mis proyectos y descubramos cómo podemos construir algo increíble juntos!</p>
+            </div>
+        </div>
+
+
+        <div class="proyects_content"><!--DIV Proyectos-->
+            <h2>Proyectos</h2>
+
+            <div><!--proyecto 1-->
+                <img src="/imagenes/proyecto_pull_bear.jpg" alt="">
+                <h3>Pull&Bear</h3>
+                <p>Aquí te presento mi trabajo en el desarrollo front-end de la web de Pull&Bear, donde me enfoqué en crear una experiencia de usuario fluida y visualmente atractiva para el dinámico mundo de la moda.</p>
+            </div>
+
+            <div><!--proyecto 2-->
+                <img src="/imagenes/proyecto_pull_bear.jpg" alt="">
+                <h3>Pull&Bear</h3>
+                <p>Aquí les presento mi fan page dedicada a Jinx de Arcane, donde me centré en replicar su energía caótica y su estética única a través de un diseño web dinámico y una experiencia de usuario envolvente. Fue un reto divertido traducir su personalidad explosiva en líneas de código.</p>
+            </div>
+
+            <button>Ver más proyectos</button>
+        </div>
+
+        <div>
+            <h2>¿Hablamos?</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+    </main>
     
 </body>
 </html>
