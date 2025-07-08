@@ -22,36 +22,81 @@ h3, h2{
     text-align: center;
     padding-top: 5px;
 }
-p{
-    margin-bottom: 20px;
+p, li{
+    margin-bottom: 10px;
     font-family:'FuenteNormal', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
 }
 img{
     width: 350px;
 }
-
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
 /*HERO*/
 .hero_content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; 
-
 }
 .hero_content p{
     text-align: justify;
 }
 .hero span {
     font-size: 1.5em; 
-    color: #FDAAAA; 
+    color: #AA5986; 
     font-weight: bold;
 }
+.hero_content .hero p:first-child { /*Hola*/
+    font-size: 2em; 
+    font-weight: bold;
+    color: #333; 
+    margin-top: 5px; 
+}
+.hero_content .hero strong {
+    color: #AA5986; 
+    font-weight: bold;
+}
+/*HOME > HERO > MEDI@Q*/
+@media (min-width: 1024px) {
+    .hero_content {
+        width: 100;
+        background-color: #ace7a5;
+        flex-direction: row; /*img-izq, text-der */
+        justify-content: center;
+        align-items: flex-start; 
+        padding: 5px 40px; 
+        text-align: left;
+    }
 
+    .hero_content div:first-child { /*div img*/
+        flex: 1;
+        margin-right: 40px; 
+        margin-bottom: 0; 
+        display: flex; 
+        justify-content: right; 
+        align-items: center;
+    }
+    .hero_content img {
+        max-width: 350px;
+        margin-bottom: 0; 
+    }
+    .hero_content .hero { /*div texto*/
+        margin-right: 50px;
+        flex: 1.5; /*texto ocupa + espacio que img*/
+        
+    }
+    .hero_content p {
+        text-align: left; 
+    }
+}
+
+/*-----------------------------------------------------*/
 /*PROYECTOS*/
 .proyecto_content{
     padding: auto 20px;
 }
-
 .proyecto_content img{
     width: 100%;
     display: flex;
@@ -60,7 +105,6 @@ img{
     align-items: center; 
     border-radius: 10px;
 }
-
 .proyecto_content .proyecto_item:nth-child(n+3) {
     display: none;
 }
@@ -78,6 +122,7 @@ img{
         width: calc(50% - 20px); 
         margin-bottom: 20px; 
     }
+    /*bloqueo de visualización proyectos*/
     .proyecto_content .proyecto_item:nth-child(n+3) {
         display: block;
     }
@@ -97,7 +142,7 @@ img{
         width: calc(33.33% - 20px); 
         margin-bottom: 20px; 
     }
-
+    /*bloqueo de visualización proyectos*/
     .proyecto_content .proyecto_item:nth-child(n+5) {
         display: block;
     }
@@ -122,7 +167,6 @@ img{
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
 }
-
 .proyecto_content button:hover {
     background-color: #FDAAAA; /*Color + oscuro al pasar el ratón */
     color: whitesmoke;
@@ -131,7 +175,7 @@ img{
     background-color: #35F0FD; /*color  clic*/
 }
 
-
+/*-----------------------------------------------------*/
 /*FORMULARIO CONTACTO*/
 form {
     max-width: 700px; /*ancho form*/
@@ -140,37 +184,29 @@ form {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*sombra*/
 }
-
 .form-group {
     margin-bottom: 20px; /*espacio entre divs*/
     display: flex;
     flex-direction: column; /*apila vertical*/
     width: 100%;
 }
-
 /*FORM > labels*/
 .form-group label {
     display: block; /*label ocupa su propia línea*/
     margin-bottom: 8px; /*espacio entre label-input*/
 }
-
 /*FORM > inputs y textarea*/
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
     width: calc(100% - 20px); /*100% ancho padre menos padding*/
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    box-sizing: border-box; /*incluye el padding y  border en el ancho total*/
 }
-
 /*FORM > textarea*/
 .form-group textarea {
     min-height: 100px; /*altura mín*/
     resize: vertical; /*redimensiona vertical*/
 }
-
 /*FORM > submit*/
 .submit-button{    
     display: block; 
@@ -192,4 +228,74 @@ form {
 }
 .submit-button:active {
     background-color: #FDAAAA; /*color  clic*/
+}
+
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+
+/*ABOUT*/
+/*ABOUT > ESTUDIOS*/
+.estudios_content, .extra_content, .laboral_content{
+    padding: 5px 20px; 
+    margin-bottom: 2px; 
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+}
+
+/* títulos */
+.estudios_content h2, .extra_content h2, .laboral_content h2{ 
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 2px;
+    padding-bottom: 2px; 
+    border-bottom: 10px solid; /*línea debajo título*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block; /*ancho del text*/
+}
+/*color lineas titulos*/
+.estudios_content h2 {
+    border-color: #4dc7d6; 
+}
+.extra_content h2 {
+    border-color: #f7b7cf;
+}
+.laboral_content h2 {
+    border-color: #8bcb61;
+}
+
+/*estilos ítems*/
+.estudio_item h4, .extra_item h4, .laboral_content h4{
+    font-size: 1.2em;
+    margin-bottom: 1px;
+    color: #333;
+}
+.estudio_item p,.extra_item p, .laboral_content p{
+    margin-left: 20px;
+}
+.laboral_content li{
+    list-style: square;
+}
+
+/*ABOUT @*/
+/*media ABOUT*/
+@media (min-width: 1024px) { /*SOLO EN NAVEGADOR*/
+    .estudios_extra_content {
+        width: 90%;
+        display: flex; 
+        justify-content: space-between; 
+        gap: 40px; /*espacio entre columnas*/
+    }
+    .estudios_content{
+        text-align: right;
+    }
+    .estudios_extra_laboral_content{ /*centra el contenido:*/
+        margin: 5px auto;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .estudios_content, .extra_content {
+        flex: 1; /* Hace que ambos divs ocupen un espacio igual en el flex container */
+        margin-bottom: 0; /* Elimina el margen inferior cuando están en fila */
+    }
 }
