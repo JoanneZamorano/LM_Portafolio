@@ -12,21 +12,26 @@
 }
 
 main{
+    width: 90%;
     margin: 5px 20px 5px 20px;
     padding: 5px 20px 5px 20px;
 }
+h2{
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 2px;
+    padding-bottom: 2px; 
+}
+
 h2, h3, a{
     font-family:'FuenteTitulos', Arial, Helvetica, sans-serif;
 }
-h3, h2{
-    text-align: center;
-    padding-top: 5px;
-}
+
 p, li{
     margin-bottom: 10px;
     font-family:'FuenteNormal', Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 0.9em;
+    line-height: 1.1;
 }
 img{
     width: 350px;
@@ -49,10 +54,10 @@ img{
     font-weight: bold;
 }
 .hero_content .hero p:first-child { /*Hola*/
-    font-size: 2em; 
+    font-size: 1.5em; 
     font-weight: bold;
-    color: #333; 
-    margin-top: 5px; 
+    margin-top: 50px; 
+
 }
 .hero_content .hero strong {
     color: #AA5986; 
@@ -61,8 +66,6 @@ img{
 /*HOME > HERO > MEDI@Q*/
 @media (min-width: 1024px) {
     .hero_content {
-        width: 100;
-        background-color: #ace7a5;
         flex-direction: row; /*img-izq, text-der */
         justify-content: center;
         align-items: flex-start; 
@@ -85,10 +88,14 @@ img{
     .hero_content .hero { /*div texto*/
         margin-right: 50px;
         flex: 1.5; /*texto ocupa + espacio que img*/
-        
     }
     .hero_content p {
         text-align: left; 
+        margin-left: -50px;
+    }
+        .hero_content h6 {
+        text-align: left; 
+        margin-left: -50px;
     }
 }
 
@@ -133,6 +140,9 @@ img{
 
 @media (min-width: 1200px) { /*navegador*/
     .proyecto_content {
+        width: 90%;
+        text-align: center;
+        margin: auto;
         display: flex;
         flex-direction: row; 
         flex-wrap: wrap; 
@@ -242,22 +252,19 @@ form {
 }
 
 /* títulos */
-.estudios_content h2, .extra_content h2, .laboral_content h2{ 
-    font-size: 1.8em;
-    text-align: center;
-    margin-bottom: 2px;
-    padding-bottom: 2px; 
-    border-bottom: 10px solid; /*línea debajo título*/
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: inline-block; /*ancho del text*/
-}
 /*color lineas titulos*/
+.estudios_content h2, .extra_content h2, .laboral_content h2{
+    display: inline-block; /*ancho del text*/
+    border-bottom: 8px solid; /*línea debajo título*/
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
 .estudios_content h2 {
     border-color: #4dc7d6; 
 }
 .extra_content h2 {
     border-color: #f7b7cf;
+
 }
 .laboral_content h2 {
     border-color: #8bcb61;
@@ -280,22 +287,21 @@ form {
 /*media ABOUT*/
 @media (min-width: 1024px) { /*SOLO EN NAVEGADOR*/
     .estudios_extra_content {
-        width: 90%;
+        width: 70%;
         display: flex; 
         justify-content: space-between; 
-        gap: 40px; /*espacio entre columnas*/
+        gap: 5px; /*espacio entre columnas*/
+        margin-left: 100px;
     }
     .estudios_content{
         text-align: right;
     }
-    .estudios_extra_laboral_content{ /*centra el contenido:*/
-        margin: 5px auto;
+    .estudios_extra_laboral_content{ /*centra el contenido*/
         display: flex; 
         flex-direction: column; 
         align-items: center; 
     }
     .estudios_content, .extra_content {
-        flex: 1; /* Hace que ambos divs ocupen un espacio igual en el flex container */
-        margin-bottom: 0; /* Elimina el margen inferior cuando están en fila */
+        flex: 1; /*ambos divs ocupen un espacio igual en flex container*/
     }
 }
