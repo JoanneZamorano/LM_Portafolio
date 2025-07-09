@@ -18,13 +18,29 @@ main{
 }
 h2{
     font-size: 1.8em;
-    text-align: center;
     margin-bottom: 2px;
     padding-bottom: 2px; 
 }
-
 h2, h3, a{
     font-family:'FuenteTitulos', Arial, Helvetica, sans-serif;
+}
+.h2, h3{
+    display: inline-block; /*ancho del text*/
+    border-bottom: 8px solid; /*línea debajo título*/
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.titulo_azul{
+    border-color: #4dc7d6; 
+}
+.titulo_rosa{
+    border-color: #f7b7cf;
+}
+.titulo_verde{
+    border-color: #8bcb61;
+}
+.titulo_amarillo{
+    border-color: #ebe455;
 }
 
 p, li{
@@ -35,6 +51,9 @@ p, li{
 }
 img{
     width: 350px;
+}
+a{
+    text-decoration: none;
 }
 /*-----------------------------------------------------*/
 /*-----------------------------------------------------*/
@@ -62,6 +81,13 @@ img{
 .hero_content .hero strong {
     color: #AA5986; 
     font-weight: bold;
+}
+h2{
+    display: inline-block; /*ancho del text*/
+    border-bottom: 8px solid; /*línea debajo título*/
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: #4dc7d6; 
 }
 /*HOME > HERO > MEDI@Q*/
 @media (min-width: 1024px) {
@@ -147,6 +173,7 @@ img{
         flex-direction: row; 
         flex-wrap: wrap; 
         justify-content: space-between; 
+        align-items: center;
     }
     .proyecto_item {
         width: calc(33.33% - 20px); 
@@ -162,28 +189,24 @@ img{
 }
 
 /*HOME > PROYECT > BUTTON*/
-.proyecto_content button{
-    display: block; 
-    width: 100%; 
-    max-width: 280px; 
-    margin: 30px auto 0 auto; 
+.proyecto_button button{
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 30px auto 0 auto;
     padding: 5px 25px; 
     text-align: center;
     border: 1px solid #FDAAAA;
     cursor: pointer;
-    background-color: white;
-    color: #FDAAAA;
     font-size: large;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
 }
-.proyecto_content button:hover {
-    background-color: #FDAAAA; /*Color + oscuro al pasar el ratón */
+/*.proyecto_button button:hover {
+    background-color: #FDAAAA; 
     color: whitesmoke;
-}
-.proyecto_content button:active {
-    background-color: #35F0FD; /*color  clic*/
-}
+}*/
 
 /*-----------------------------------------------------*/
 /*FORMULARIO CONTACTO*/
@@ -245,38 +268,22 @@ form {
 
 /*ABOUT*/
 /*ABOUT > ESTUDIOS*/
-.estudios_content, .extra_content, .laboral_content{
-    padding: 5px 20px; 
+.estudios_content, .extra_content, .laboral_content, .otros_content{
+    padding: 5px 10px; 
     margin-bottom: 2px; 
-    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
 }
 
 /* títulos */
 /*color lineas titulos*/
-.estudios_content h2, .extra_content h2, .laboral_content h2{
-    display: inline-block; /*ancho del text*/
-    border-bottom: 8px solid; /*línea debajo título*/
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-.estudios_content h2 {
-    border-color: #4dc7d6; 
-}
-.extra_content h2 {
-    border-color: #f7b7cf;
 
-}
-.laboral_content h2 {
-    border-color: #8bcb61;
-}
 
 /*estilos ítems*/
-.estudio_item h4, .extra_item h4, .laboral_content h4{
+.estudio_item h4, .extra_item h4, .laboral_content h4, .otros_content h4{
     font-size: 1.2em;
     margin-bottom: 1px;
     color: #333;
 }
-.estudio_item p,.extra_item p, .laboral_content p{
+.estudio_item p,.extra_item p, .laboral_content p, .otros_content P{
     margin-left: 20px;
 }
 .laboral_content li{
@@ -286,14 +293,14 @@ form {
 /*ABOUT @*/
 /*media ABOUT*/
 @media (min-width: 1024px) { /*SOLO EN NAVEGADOR*/
-    .estudios_extra_content {
-        width: 70%;
+    .estudios_extra_content, .otros_laboral_content {
+        width: 90%;
         display: flex; 
         justify-content: space-between; 
         gap: 5px; /*espacio entre columnas*/
-        margin-left: 100px;
+        margin-left: 2px auto;
     }
-    .estudios_content{
+    .estudios_content, .otros_content{
         text-align: right;
     }
     .estudios_extra_laboral_content{ /*centra el contenido*/
@@ -301,7 +308,70 @@ form {
         flex-direction: column; 
         align-items: center; 
     }
-    .estudios_content, .extra_content {
+    .estudios_content, .extra_content, .otros_content, .laboral_content{
         flex: 1; /*ambos divs ocupen un espacio igual en flex container*/
     }
 }
+
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+
+/*PROYECTOS*/
+.proyectos_item{ /*bloques*/
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+/*titulos*/
+.proyectos_item{
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+}
+
+@media (min-width: 1024px) { /*SOLO EN NAVEGADOR*/
+    .proyectos_content_grupo{ /*centra el contenido*/
+        gap: 5px; 
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: column; 
+        align-content: center; 
+        text-align: center;
+    }
+    .proyectos_content{
+        width: 90%;
+        display: flex; 
+        justify-content: space-between; 
+        gap: 5px; /*espacio entre columnas*/
+        margin-left: 2px auto;
+    }
+    .proyectos_item{
+        flex: 1; /*ambos divs ocupen un espacio igual en flex container*/
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .proyectos_item p{
+        margin: 20px 20px;
+    }
+
+}
+
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*NAVEGADOR*/
+header{
+    width: 90%;
+    margin: 5px 50px;
+    text-align: right;
+}
+
+
+
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*FOOTER*/
