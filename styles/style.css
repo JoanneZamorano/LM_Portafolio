@@ -22,8 +22,10 @@ main{
 }
 h2{
     font-size: 1.8em;
+    margin-top: 20px;
     margin-bottom: 2px;
     padding-bottom: 2px; 
+    text-align: center;
 }
 h2, h3, a{
     font-family:'FuenteTitulos', Arial, Helvetica, sans-serif;
@@ -444,15 +446,15 @@ form {
     }
 
     .menu-principal{
+        
         display: none;
         flex-direction: column;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         position: absolute;
+        width: 100%;
         top:100%;
         right: 0;
         left: 0;
-        padding: 15px 20px;
-        box-shadow: 0 6px 10px rgba(0,0,0,0.2);
         z-index: 100;        
     }
     .menu-principal ul {
@@ -460,12 +462,17 @@ form {
         display: flex; 
         flex-direction: column; 
     }
-        .menu-principal li {
-        width: 90%;
+    .menu-principal li {
+        width: 100%;
         background-color: #333;
         border-radius: 10px;
         display: flex; 
         flex-direction: column; 
+    }
+    .menu-principal a{
+        width: 90%;
+        padding: 10px 10px;
+        text-align: center;
     }
     .menu-principal.menu-desplegado{
         display: flex;
