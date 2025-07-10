@@ -412,7 +412,7 @@ form {
     margin: 1px auto;
     padding: 5px 30px;
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-between;
     align-items: center;
     position: relative;
 }
@@ -420,7 +420,7 @@ form {
 .boton-menu{
     display: none;
     width: 95%;
-    font-size: 30px;
+    font-size: 35px;
     text-align: right;
     color: #4dc7d6;
     text-decoration: none;
@@ -496,4 +496,22 @@ form {
         width: 85%;
     }
 
+}
+
+
+
+
+/*------*/
+/*Modo claro/oscuro*/
+body{
+    transition: background-color 0.4s ease, color 0.4s ease;
+    padding: 50px;
+}
+.modo_dia_noche img{
+    max-width: 35px;
+    cursor: pointer;
+}
+body.oscuro{
+    background-color: #121212;
+    color: #f0f0f0;
 }

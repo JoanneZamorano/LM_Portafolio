@@ -1,3 +1,4 @@
+//MENU HAMBURGUESA
 let lanzador = "#enlace-menu";
 let desplegable = "#menu";
 let despliegaClase = "menu-desplegado";
@@ -13,3 +14,13 @@ function despliegaMenu(){
 }
 
 nav();
+
+
+//MODO CLARO/SOCURO
+const boton = document.getElementById("toggleTema");
+
+boton.addEventListener("click",oscuro);
+
+function oscuro(){
+    document.body.classList.toggle("oscuro");
+}
