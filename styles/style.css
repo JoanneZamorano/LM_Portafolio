@@ -498,8 +498,37 @@ form {
 
 }
 
-
-
+/*-------------------------------------------------------*/
+/*cookies*/
+.cookie-popup{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #ebe455;
+    color: #000;
+    border-radius: 10px;
+    align-items: center;
+    width: 60%;
+    padding: 40px 40px;
+    margin: 10px auto;
+}
+.cookie-popup.show{
+    display: flex;
+}
+.cookie-popup button{
+    margin-left: 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cookie-popup a{
+    color: #007bff;
+    text-decoration: underline;
+}
 
 /*------*/
 /*Modo claro/oscuro*/
