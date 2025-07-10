@@ -25,6 +25,7 @@ function oscuro(){
     document.body.classList.toggle("oscuro");
 }
 
+
 //COOKIES
 const popup = document.getElementById("cookiePopup");
 const btn = document.getElementById("acceptCookies");
