@@ -225,6 +225,13 @@ h2{
     .proyecto_content .proyecto_item:nth-child(n+7) {
         display: none;
     }
+    .proyecto_content img{
+    transition: 0.6s;
+    }
+    .proyecto_content img:hover{
+        transform: scale(1.06);
+        transition: 0.6s;
+    }
 }
 
 /*HOME > PROYECT > BUTTON*/
@@ -397,6 +404,14 @@ form {
     }
     .proyectos_item p{
         margin: 20px 20px;
+    }
+    .proyectos_content img{
+        border-radius: 10px;
+        transition: 0.6s;
+    }
+    .proyectos_content img:hover{
+        transform: scale(1.06);
+        transition: 0.6s;
     }
 }
 
