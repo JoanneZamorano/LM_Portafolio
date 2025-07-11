@@ -488,7 +488,7 @@ form {
         top:100%;
         right: 0;
         left: 0;
-        z-index: 100;        
+        z-index: 2;        
     }
     .menu-principal ul {
         width: 100%;
@@ -577,7 +577,7 @@ form {
     width: 60%;
     padding: 40px 40px;
     margin: 10px auto;
-    z-index: 1000;
+    z-index: 2;
 }
 .cookie-popup.show{
     display: flex;
