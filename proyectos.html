@@ -10,13 +10,12 @@
 </head>
 <body>
     <!--Header-->
-    <!--Header-->
     <header class="cabecera">
-        
+        <!--DIA/NOCHE-->        
         <div class="modo_dia_noche">
             <img id="toggleTema" src="/imagenes/icono_dia_noche.png" alt="icono modo dia o noche">
         </div>
-
+        <!--NAVEGADOR-->
         <a href="#" id="enlace-menu" class="boton-menu">&#9776;</a>
         <nav id="menu" class="menu-principal">
             <ul class="nav_ul">
@@ -27,68 +26,69 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <div class="hero_content">
+        <!--Inicio sección HERO-->
+        <section class="hero_content">
             <div><!--DIV img-->
                 <img src="/imagenes/me.png" alt="Dibujo de una chica sonriendo.">
-
             </div>
+
             <div class="hero"><!--DIV Texto presentación-->
                 <h2 class="titulo_verde">PROYECTOS</h2>
                 <p>Si te preguntas qué pasa cuando la creatividad se encuentra con el código, esta sección es la respuesta. Aquí plasmo mis ideas en proyectos tangibles, utilizando un abanico de herramientas que domino y gestionando cada paso con Git para un control de versiones impecable.</p>
                 <p>He utilizado HTML y CSS para dibujar interfaces y darles estilo, Java para construir lógicas y sistemas robustos, JavaScript para crear experiencias interactivas y dinámicas, y Python para inyectar inteligencia, automatización y manejo de datos. Cada proyecto es una pequeña obra, creada con la tecnología más adecuada para el desafío, y lista para ser explorada. ¡Adelante!</p>
             </div>
+        </section>
 
+        <!--Inicio sección PROYECTOS-->
+        <section class="proyectos_content_grupo">
+            <!--CONTENEDOR 1-->
+            <div class="proyectos_content"> 
+                <article class="proyectos_item proyecto_1" id="proyecto_1"><!--DIV PROYECTO 1-->
+                    <h3 class="titulo_azul">PasteleriaAPP</h3>
+                    <a href="https://github.com/JoanneZamorano/PasteleriaApp"><img src="/imagenes/proyecto_PasteleriaAPP.png" alt="Portada Proyecto 1"></a>
+                    <p>Este repositorio es un proyecto desarrollado como parte de la asignatura de Programación y Entornos de Desarrollo de DAM. Se trata de una aplicación de gestión de negocios para una pastelería, que permite gestionar clientes, productos, ventas e imprimir tickets. También visualiza datos de ventas y controla el stock de la pasteleria.</p>
+                </article>
 
-            <div class="proyectos_content_grupo">
-                <div class="proyectos_content"> 
-                    <div class="proyectos_item proyecto_1" id="proyecto_1"><!--DIV PROYECTO 1-->
-                        <h3 class="titulo_azul">PasteleriaAPP</h3>
-                        <a href="https://github.com/JoanneZamorano/PasteleriaApp"><img src="/imagenes/proyecto_PasteleriaAPP.png" alt="Portada Proyecto 1"></a>
-                        <p>Este repositorio es un proyecto desarrollado como parte de la asignatura de Programación y Entornos de Desarrollo de DAM. Se trata de una aplicación de gestión de negocios para una pastelería, que permite gestionar clientes, productos, ventas e imprimir tickets. También visualiza datos de ventas y controla el stock de la pasteleria.</p>
-                    </div>
+                <article class="proyectos_item"><!--DIV PROYECTO 2-->
+                    <h3 class="titulo_rosa">QuizMasterPy</h3>
+                    <a href="https://github.com/JoanneZamorano/QuizMasterPy"><img src="/imagenes/proyecto_quiz.png" alt="Portada Proyecto 2" id="proyecto_2"></a>
+                    <p>Este repositorio es un proyecto de la asignatura MPO (Python) de DAM. Permite a los usuarios realizar cuestionarios tipo test. El programa muestra preguntas con múltiples opciones, corrige automáticamente las respuestas y proporciona un resumen detallado al finalizar.</p>                    </div>
+                </article>
 
-                    <div class="proyectos_item"><!--DIV PROYECTO 2-->
-                        <h3 class="titulo_rosa">QuizMasterPy</h3>
-                        <a href="https://github.com/JoanneZamorano/QuizMasterPy"><img src="/imagenes/proyecto_quiz.png" alt="Portada Proyecto 2" id="proyecto_2"></a>
-                        
-                        <p>Este repositorio es un proyecto de la asignatura MPO (Python) de DAM. Permite a los usuarios realizar cuestionarios tipo test. El programa muestra preguntas con múltiples opciones, corrige automáticamente las respuestas y proporciona un resumen detallado al finalizar.</p>
-                    </div>
-                </div>
+            <!--CONTENEDOR 2-->
+            <div class="proyectos_content"> 
+                <article class="proyectos_item" id="proyecto_3"><!--DIV PROYECTO 3-->
+                    <h3 class="titulo_amarillo">Katas JavaScript</h3>
+                    <a href="https://github.com/JoanneZamorano/Proyecto-2-Katas-JavaScript--Joanne-Zamorano"><img src="/imagenes/proyecto_katasJavaScript.png" alt="Portada Proyecto 3"></a>                        
+                    <p>...</p>
+                </article>
 
-                <div class="proyectos_content"> 
-                    <div class="proyectos_item" id="proyecto_3"><!--DIV PROYECTO 3-->
-                        <h3 class="titulo_amarillo">Katas JavaScript</h3>
-                        <a href="https://github.com/JoanneZamorano/Proyecto-2-Katas-JavaScript--Joanne-Zamorano"><img src="/imagenes/proyecto_katasJavaScript.png" alt="Portada Proyecto 3"></a>                        
-                        <p>...</p>
-                    </div>
-
-                    <div class="proyectos_item" id="proyecto_4"><!--DIV PROYECTO 4-->
-                        <h3 class="titulo_verde">Katas Python</h3>
-                        <a href=""><img src="/imagenes/proyecto_kataspython.png" alt="Portada Proyecto 4" id="proyecto_2"></a>                        
-                        <p>...</p>
-                    </div>
-                </div>
-
-                <div class="proyectos_content"> 
-                    <div class="proyectos_item" id="proyecto_5"><!--DIV PROYECTO 5-->
-                        <h3 class="titulo_azul">Próximo Proyecto</h3>
-                        <a href=""><img src="/imagenes/proyecto_construccion.png" alt="Portada Proyecto 5"></a>
-                        <p>En desarrollo</p>
-                    </div>
-
-                    <div class="proyectos_item" id="proyecto_6"><!--DIV PROYECTO 6-->
-                        <h3 class="titulo_rosa">Próximo Proyecto</h3>
-                        <a href=""><img src="/imagenes/proyecto_enconstruccion.png" alt="Portada Proyecto 6" id="proyecto_2"></a>                        
-                        <p>En desarrollo</p>
-                    </div>
-                </div>
-
+                <article class="proyectos_item" id="proyecto_4"><!--DIV PROYECTO 4-->
+                    <h3 class="titulo_verde">Katas Python</h3>
+                    <a href=""><img src="/imagenes/proyecto_kataspython.png" alt="Portada Proyecto 4" id="proyecto_2"></a>                        
+                    <p>...</p>
+                </article>
             </div>
-        </div>
+
+            <!--CONTENEDOR 3-->
+            <div class="proyectos_content"> 
+                <article class="proyectos_item" id="proyecto_5"><!--DIV PROYECTO 5-->
+                    <h3 class="titulo_azul">Próximo Proyecto</h3>
+                    <a href=""><img src="/imagenes/proyecto_construccion.png" alt="Portada Proyecto 5"></a>
+                    <p>En desarrollo</p>
+                </article>
+
+                <article class="proyectos_item" id="proyecto_6"><!--DIV PROYECTO 6-->
+                    <h3 class="titulo_rosa">Próximo Proyecto</h3>
+                    <a href=""><img src="/imagenes/proyecto_enconstruccion.png" alt="Portada Proyecto 6" id="proyecto_2"></a>                        
+                    <p>En desarrollo</p>
+                </article>
+            </div>
+        </section>
     </main>
 
+    <!--Inicio sección FOOTER-->
     <footer class="main-footer">
         <div class="footer-content">
             <p>&copy; 2025 Joanne Zamorano | Todos los derechos reservados | Diseñado por Joanne Zamorano<br><a href="/ppdd.html">Politica Privacidad Datos</a></p>
@@ -99,6 +99,7 @@
         </div>
     </footer>
 
+    <!--JavaScript-->
     <script src="js/javascript.js"></script>    
 </body>
 </html>

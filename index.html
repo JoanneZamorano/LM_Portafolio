@@ -11,12 +11,11 @@
 <body>
     <!--Header-->
     <header class="cabecera">
-
+        <!--DIA/NOCHE-->
         <div class="modo_dia_noche">
             <img id="toggleTema" src="/imagenes/icono_dia_noche.png" alt="icono modo dia o noche">
         </div>
-
-
+        <!--Inicio sección NAVEGADOR-->
         <a href="#" id="enlace-menu" class="boton-menu">&#9776;</a>
         <nav id="menu" class="menu-principal">
             <ul class="nav_ul">
@@ -29,67 +28,70 @@
     </header>
 
     <main>
-        
-        <div class="hero_content">
+        <!--Inicio sección HERO-->
+        <section class="hero_content">
             <div><!--DIV img-->
                 <img src="/imagenes/me.png" alt="Dibujo de una chica sonriendo.">
-
             </div>
+
             <div class="hero"><!--DIV Texto presentación-->
                 <p>¡Hola!</p>
                 <p>Mi nombre es <span class="rosa">Joanne Zamorano</span> y estas en mi portafolio personal.</p>
                 <p>Como <strong>Desarrolladora de Aplicaciones Multiplataforma</strong>, me encanta dar vida a ideas que funcionan en cualquier dispositivo. Mi curiosidad insaciable me llevó a profundizar en el análisis de datos con un <strong>Máster en Data Analytics</strong>, lo que me permite crear soluciones más inteligentes. Y para redondear mi visión, me capacité como <strong>Fullstack Developer de JavaScript</strong>.</p>
                 <p>¡Echa un vistazo a mis proyectos y descubramos cómo podemos construir algo increíble juntos!</p>
             </div>
-        </div>
-        <div class="proyecto_content_grupo">
+        </section>
 
-        
-        <h2 class="titulo_azul">PROYECTOS</h2>
-        <div class="proyecto_content"><!--DIV Proyectos-->
-            
-            <div class="proyecto_item"><!--proyecto 1-->
-                <a href="/proyectos.html#proyecto_1"><img src="/imagenes/proyecto_PasteleriaAPP.png" alt="Portada Proyecto 1"></a>
-                <h3 class="titulo_azul">PasteleriaAPP</h3>
-                <p>Este repositorio es un proyecto desarrollado como parte de la asignatura de Programación y Entornos de Desarrollo de DAM. Se trata de una aplicación de gestión de negocios para una pastelería, que permite gestionar clientes, productos, ventas e imprimir tickets. También visualiza datos de ventas y controla el stock de la pasteleria.</p>
+        <!--Inicio sección PROYECTOS-->
+        <section class="proyecto_content_grupo">        
+            <h2 class="titulo_azul">PROYECTOS</h2>
+
+            <div class="proyecto_content"><!--DIV Proyectos-->
+                
+                <article class="proyecto_item"><!--proyecto 1-->
+                    <a href="/proyectos.html#proyecto_1"><img src="/imagenes/proyecto_PasteleriaAPP.png" alt="Portada Proyecto 1"></a>
+                    <h3 class="titulo_azul">PasteleriaAPP</h3>
+                    <p>Este repositorio es un proyecto desarrollado como parte de la asignatura de Programación y Entornos de Desarrollo de DAM. Se trata de una aplicación de gestión de negocios para una pastelería, que permite gestionar clientes, productos, ventas e imprimir tickets. También visualiza datos de ventas y controla el stock de la pasteleria.</p>
+                </article>
+
+                <article class="proyecto_item"><!--proyecto 2-->
+                    <a href="/proyectos.html#proyecto_2"><img src="/imagenes/proyecto_quiz.png" alt="Portada Proyecto 2"></a>
+                    <h3 class="titulo_rosa">QuizMasterPy</h3>
+                    <p>Este repositorio es un proyecto de la asignatura MPO (Python) de DAM. Permite a los usuarios realizar cuestionarios tipo test. El programa muestra preguntas con múltiples opciones, corrige automáticamente las respuestas y proporciona un resumen detallado al finalizar.</p>
+                </article>
+
+                <article class="proyecto_item"><!--proyecto 3-->
+                    <a href="/proyectos.html#proyecto_3"><img src="/imagenes/proyecto_katasJavaScript.png" alt="Portada Proyecto 3"></a>        
+                    <h3 class="titulo_amarillo">Katas JavaScript</h3>
+                    <p>...</p>
+                </article>
+
+                <article class="proyecto_item"><!--proyecto 4-->
+                    <a href="/proyectos.html#proyecto_4"><img src="/imagenes/proyecto_kataspython.png" alt="Portada Proyecto 4"></a>
+                    <h3 class="titulo_verde">Katas Python</h3>
+                    <p>...</p>
+                </article>
+
+                <article class="proyecto_item"><!--proyecto 5-->
+                    <a href="/proyectos.html#proyecto_5"><img src="/imagenes/proyecto_construccion.png" alt="Portada Proyecto 5"></a>        
+                    <h3 class="titulo_azul">Próximo Proyecto</h3>
+                    <p>En desarrollo</p>
+                </article>
+
+                <article class="proyecto_item"><!--proyecto 6-->
+                    <a href="/proyectos.html#proyecto_6"><img src="/imagenes/proyecto_enconstruccion.png" alt="Portada Proyecto 6"></a>
+                    <h3 class="titulo_rosa">Próximo Proyecto</h3>
+                    <p>En desarrollo</p>
+                </article>
             </div>
 
-            <div class="proyecto_item"><!--proyecto 2-->
-                <a href="/proyectos.html#proyecto_2"><img src="/imagenes/proyecto_quiz.png" alt="Portada Proyecto 2"></a>
-                <h3 class="titulo_rosa">QuizMasterPy</h3>
-                <p>Este repositorio es un proyecto de la asignatura MPO (Python) de DAM. Permite a los usuarios realizar cuestionarios tipo test. El programa muestra preguntas con múltiples opciones, corrige automáticamente las respuestas y proporciona un resumen detallado al finalizar.</p>
+            <div class="proyecto_button">
+                <a href="/proyectos.html"><button>Ver más proyectos</button></a>
             </div>
+        </section>
 
-            <div class="proyecto_item"><!--proyecto 3-->
-                <a href="/proyectos.html#proyecto_3"><img src="/imagenes/proyecto_katasJavaScript.png" alt="Portada Proyecto 3"></a>        
-                <h3 class="titulo_amarillo">Katas JavaScript</h3>
-                <p>...</p>
-            </div>
-
-            <div class="proyecto_item"><!--proyecto 4-->
-                <a href="/proyectos.html#proyecto_4"><img src="/imagenes/proyecto_kataspython.png" alt="Portada Proyecto 4"></a>
-                <h3 class="titulo_verde">Katas Python</h3>
-                <p>...</p>
-            </div>
-
-            <div class="proyecto_item"><!--proyecto 5-->
-                <a href="/proyectos.html#proyecto_5"><img src="/imagenes/proyecto_construccion.png" alt="Portada Proyecto 5"></a>        
-                <h3 class="titulo_azul">Próximo Proyecto</h3>
-                <p>En desarrollo</p>
-            </div>
-
-            <div class="proyecto_item"><!--proyecto 6-->
-                <a href="/proyectos.html#proyecto_6"><img src="/imagenes/proyecto_enconstruccion.png" alt="Portada Proyecto 6"></a>
-                <h3 class="titulo_rosa">Próximo Proyecto</h3>
-                <p>En desarrollo</p>
-            </div>
-
-        </div>
-        <div class="proyecto_button">
-            <a href="/proyectos.html"><button>Ver más proyectos</button></a>
-        </div>
-        </div>
-        <div class="form_content_grupo">
+        <!--Inicio sección CONTACTO-->
+        <section class="form_content_grupo">
             <h2 class="titulo_rosa" id="contact">CONTACTO</h2>
 
             <form action="https://formsubmit.co/info.joazamorano@gmail.com" method="POST">
@@ -120,26 +122,21 @@
 
                 <button type="submit" class="submit-button">Enviar</button>
             </form>
+        </section>
+
+        <!--COOKIES Y POPUP-->
+        <div class="cookie-popup" id="cookiePopup">            
+            <p><strong>¡No te lo vas a creer! Este sitio usa cookies... y son geniales.</strong><br> Sí, es cierto. Mis cookies no están para molestarte, sino para hacer tu visita más eficiente y personalizada. Son la chispa que enciende una experiencia web superior mientras descubres mi portafolio.
+            <br><a href="/ppdd.html">¿Quieres saber por qué mis cookies son lo más?</a></p>
+            <button id="acceptCookies">Aceptar</button>
         </div>
-
-    <div class="cookie-popup" id="cookiePopup">
-        
-        <p><strong>¡No te lo vas a creer! Este sitio usa cookies... y son geniales.</strong><br> Sí, es cierto. Mis cookies no están para molestarte, sino para hacer tu visita más eficiente y personalizada. Son la chispa que enciende una experiencia web superior mientras descubres mi portafolio.
-        <br><a href="/ppdd.html">¿Quieres saber por qué mis cookies son lo más?</a></p>
-        <button id="acceptCookies">Aceptar</button>
-    </div>
-
-
-        <footer>
-
-        </footer>
     </main>
 
+    <!--Inicio sección FOOTER-->
     <footer class="main-footer">
         <div class="footer-content">
             <p>&copy; 2025 Joanne Zamorano | Todos los derechos reservados | Diseñado por Joanne Zamorano<br><a href="/ppdd.html">Politica Privacidad Datos</a></p>
                 
-
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/joanne-zamorano/"><img src="/imagenes/icono_linkedin.png" alt="icono linkedin"></a>
                 <a href="https://github.com/JoanneZamorano"><img src="/imagenes/icono_github.png" alt="icono github"></a>
@@ -147,6 +144,7 @@
         </div>
     </footer>
 
+    <!--JavaScript-->
     <script src="js/javascript.js"></script>
     
 </body>
