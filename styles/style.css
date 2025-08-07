@@ -235,7 +235,7 @@ h2{
 }
 
 /*HOME > PROYECT > BUTTON*/
-.proyecto_button button{
+.proyecto_button a{
     display: block;
     width: 100%;
     max-width: 280px;
@@ -250,7 +250,7 @@ h2{
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.proyecto_button button:hover {
+.proyecto_button a:hover {
     background-color: var(--color-azul); /*color al pasar el ratón*/
     color: var(--color-blanco);
     border-color: var(--color-azul)
