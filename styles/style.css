@@ -329,7 +329,7 @@ form {
 .estudio_item p,.extra_item p, .laboral_content p, .otros_content p{
     margin-left: 20px;
 }
-.laboral_content li, extra_content li{
+.laboral_content li, .extra_item li{
     list-style: square;
     margin-left: 50px;
 }
